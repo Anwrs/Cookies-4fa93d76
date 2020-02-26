@@ -22,12 +22,12 @@
 </html>
 
 <?php 
-if(($_GET["number"] > 0) && ($_GET["number"] < 4)){
-    if(isset($_GET["number"])){
+if(($_GET["number"] > 0) && ($_GET["number"] < 4)) {
+    if(isset($_GET["number"])) {
         setcookie("keuze", $_GET["number"]);
     }
     
-    if(isset($_COOKIE["keuze"])){
+    if(isset($_COOKIE["keuze"])) {
         echo "Gekozen item: " . $_COOKIE["keuze"];
     }
 }
